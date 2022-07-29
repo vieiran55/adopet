@@ -1,0 +1,181 @@
+:root {
+    --azul: #3772FF;
+    --branco: white;
+    --verde: #36D6AD;
+    --coral: #FC7071;
+    --creme: #FCF0E3;
+    --cinza: #737380;
+    --cinza-medio: #BCBCBC;
+    --cinza-claro: #F6F6F6;
+ }
+ 
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+    background-image:  url('../img/Patas.png'), url('../img/Forma2.svg'), url('../img/Forma4.png');
+    background-repeat: no-repeat;
+    background-position: top right, top left, left 70%;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+.corpo {
+   background-color: var(--branco);
+   display: flex;
+   flex-direction: column;
+}
+ 
+.conteudo {
+    text-align: center;
+    width: 70%;
+    margin: 1em auto;
+    margin-bottom: 100%;
+    flex-grow: 1;
+}
+
+.logo {
+    width: 142px;
+    height: 35px;
+ }
+
+.conteudo__titulo {
+    color: var(--azul);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    margin: 1em auto;
+}
+
+.conteudo__cadastro___formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo__cadastro___formulario____texto {
+    color: var(--cinza);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.conteudo__cadastro___formulario____conteudo {
+    width: 312px;
+    height: 40px;
+    margin-top: 10px;
+    margin: 10px;
+    background: #F7F7F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-align: center;
+
+    color:black;
+}
+
+.conteudo__cadastro___formulario____conteudo::placeholder {
+    color: var(--cinza-medio);
+}
+
+.conteudo__cadastro___formulario____esqueci{
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration-line: underline;
+
+    color: #FC7071;
+}
+
+.conteudo__cadastro___botao{
+
+    margin-top: 40px;
+    height: 40px;
+    width: 180px;
+    background: #FC7071;
+    border: 1px solid #FC7071;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgb(57, 56, 56);
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0px;
+    text-align: center;  
+    color: #FFFFFF;
+
+    
+}
+
+.fa-eye{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #0d009c;
+  }
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image:  url('../img/PatasMed.svg'), url('../img/FormaMed1.svg'), url('../img/FormaMed3.svg');
+        background-repeat: no-repeat;
+        background-position: top right, top left, right 30%;
+        min-height: 100vh;
+        font-size: 16px;
+    }
+   
+    .cabecalho__imagemLogo {
+        padding-right: 2em;
+        width: 100%;
+     }
+    
+    .conteudo {
+        margin: 8em auto;
+        width: auto;
+        margin-bottom: 100%;
+        flex-grow: 1;
+    }
+    
+    .logo {
+        align-items: center;
+        width: 252px;
+        height: 62px;
+    }
+
+    .conteudo__titulo {
+        font-size: 18px;
+    }
+
+    .conteudo__login___formulario____texto {
+        font-size: 18px;
+    }
+
+    .conteudo__login___formulario____conteudo{
+        width: 344px;
+        height: 40px;
+    }
+
+    .conteudo__login___botao{
+        width: 168px;
+        height: 40px;
+    }
+}

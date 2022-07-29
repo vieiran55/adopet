@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Adopet</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="assets/img/LogoMed.svg" alt="Logo da Adopet" class="cabecalho__imagemLogo"></a>
+        <a href="index.html"><img src="assets/img/casa.png" alt="Página Inicial" class="cabecalho__imagem"></a>
+        <a href="mensagem.html"><img src="assets/img/mensagens.svg" alt="Caixa de mensagens" class="cabecalho__imagem"></a>
+    </header>
+    
+    <main class="conteudo">
+        <img  class="logo" src="assets/img/Logoblue.svg"   alt="Logo da adopet">
+
+        <h1 class="conteudo__titulo">Já tem conta? Faça seu login:</h1>
+
+                <form class="conteudo__login___formulario">
+                    <label class="conteudo__login___formulario____texto" for="" id="emailLabel">Email</label>
+                    <input class="conteudo__login___formulario____conteudo" id="email" type="email" placeholder="Insira seu email"
+                    />
+                    <label class="conteudo__login___formulario____texto" for="" id="senhaLabel">Senha</label>
+                    <input class="conteudo__login___formulario____conteudo" id="senha" type="password" placeholder="Insira sua senha"
+                    />
+                    <a class="conteudo__login___formulario____esqueci">Esqueci minha senha</a>
+                    <button class="conteudo__login___botao" type="submit" onclick="logar();return false" >Entrar</button> 
+                </form>
+    </main>
+    <script src="./assets/js/login.js"></script>
+    <footer class="rodape">
+        2022 - Desenvolvido por Alura.
+    </footer>
+</body>
+</html>

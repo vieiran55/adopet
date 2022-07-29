@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Adopet</title>
+</head>
+
+<body class="corpo">
+    <header class="cabeçalho">
+        <header class="cabecalho">
+            <a href="index.html"><img src="assets/img/LogoMed.svg" alt="Logo da Adopet" class="cabecalho__imagemLogo"></a>
+            <a href="index.html"><img src="assets/img/casa.png" alt="Página Inicial" class="cabecalho__imagem"></a>
+            <a href="mensagem.html"><img src="assets/img/mensagens.svg" alt="Caixa de mensagens" class="cabecalho__imagem"></a>
+        </header>
+    </header>
+
+    <main class="conteudo">
+        <img class="logo" src="assets/img/Logoblue.svg" alt="Logo da adopet">
+
+        <p class="conteudo__titulo">Ainda Não tem cadastro?</p>
+        <p class="conteudo__titulo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+        
+        <form class="conteudo__cadastro___formulario" action="" id="novoCadastro">
+                        <label class="conteudo__cadastro___formulario____texto"  for="">Nome</label>
+                        <input id="nome" class="conteudo__cadastro___formulario____conteudo" type="text" placeholder="Digite seu nome completo" required
+                        />
+                        <label class="conteudo__cadastro___formulario____texto" for="" id="emailLabel">Email</label>
+                        <input id="email" class="conteudo__cadastro___formulario____conteudo" type="email" placeholder="Escolha seu melhor email" required
+                        />
+                        <label class="conteudo__cadastro___formulario____texto" for="" id="senhaLabel" >Senha</label>
+                        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                        <input id="senha" class="conteudo__cadastro___formulario____conteudo" 
+                        type="text" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" 
+                        title="Usar uma letra minúscula, uma letra maiúscula, um numero ou simbolo, 4 a 8 caracteres e sem espaços."
+                        placeholder="Crie uma senha" required
+                        />
+                        <label class="conteudo__cadastro___formulario____texto" for="">Confirme sua senha</label>
+                        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                        <input id="confirmeSenha" class="conteudo__cadastro___formulario____conteudo"
+                         type="text" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" 
+                         title="Usar uma letra minúscula, uma letra maiúscula, um numero ou simbolo, 4 a 8 caracteres e sem espaços."
+                         placeholder="Repita a senha criada acima" required
+                        />
+                        <button class="conteudo__cadastro___botao" type="submit" id="cadastrar">Cadastrar</button> 
+            </form>
+
+    </main>
+    <script defer src="./assets/js/cadastro.js"></script>
+
+    <footer class="rodape">
+        2022 - Desenvolvido por Alura.
+    </footer>
+</body>
+</html>

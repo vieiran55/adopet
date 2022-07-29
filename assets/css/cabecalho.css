@@ -1,0 +1,13 @@
+.cabecalho {
+     padding: 3em;
+     display: flex;
+     align-items: center;
+}
+
+.cabecalho__imagem {
+     padding-right: 4em;
+}
+
+.imagem__usuario {
+     padding-left: 3em;
+}

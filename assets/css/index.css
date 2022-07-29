@@ -1,0 +1,148 @@
+:root {
+    --azul: #3772FF;
+    --branco: white;
+    --verde: #36D6AD;
+    --coral: #FC7071;
+    --creme: #FCF0E3;
+    --cinza: #737380;
+    --cinza-medio: #BCBCBC;
+    --cinza-claro: #F6F6F6;
+ }
+ 
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     background-image: url('../img/Forma2.svg'), url('../img/Forma3.png'), url('../img/Ilustracao1.png');
+     background-repeat: no-repeat;
+     background-position: top left, right center, bottom 5em center;
+     min-height: 100vh;
+     font-size: 16px;
+ }
+ 
+ .corpo {
+     background-color: var(--azul);
+     display: flex;
+     flex-direction: column;
+ }
+
+ .cabecalho {
+      padding: 3em;
+ }
+ 
+ .cabecalho__imagemLogo {
+    width: 0px;
+ }
+
+ .cabecalho__imagem {
+      padding-right: 2em;
+ }
+ 
+ .conteudo {
+     align-self: center;
+     text-align: center;
+     width: 70%;
+     margin: 1em auto;
+     flex-grow: 1;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .conteudo__titulo {
+     color: var(--branco);
+     font-family: 'IBM Plex Sans';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 26px;
+     line-height: 48px;
+ }
+ 
+ .conteudo__texto1 {
+    display: block;
+     color: var(--branco);
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 400;
+     line-height: 24px;
+     margin: 1rem 0;
+ }
+
+ .conteudo__texto2 {
+    display: none;
+    color: var(--branco);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 1rem 0;
+}
+ 
+ .conteudo__link {
+     margin: 0 auto 1em;
+ 
+     display: block;
+     background-color: var(--coral);
+     border-radius: 6px;
+     padding: 0.5em;
+     background: var(--coral);
+     border: 1px solid var(--coral);
+     box-shadow: 1px 1px 4px rgb(57, 56, 56);
+ 
+     font-family: 'Poppins';
+     color: var(--branco);
+     text-decoration: none;
+     font-style: normal;
+     font-weight: 600;
+ 
+     line-height: 24px;
+     width: 12em;
+ }
+
+ @media screen and (min-width: 768px) {
+     body {
+     background-image: url('../img/FormaMed1.svg'), url('../img/FormaMed2.svg'), url('../img/IlustracaoMed.svg');
+     background-repeat: no-repeat;
+     background-position: top left, right center, bottom 5em center;
+     min-height: 100vh;
+     font-size: 16px;
+    }
+
+    .cabecalho__imagemLogo {
+        padding-right: 2em;
+        width: 100%;
+     }
+
+    .Logo{
+        display: flex;
+        align-self: center;
+        width: 250px;
+        height: 62px;
+    }
+
+    .conteudo {
+    margin: 8em 1em;
+    flex-grow: 1;
+    }
+
+    .conteudo__titulo {
+        margin: 1em auto;
+    }
+    .conteudo__texto1 {
+        display: none;
+    }
+
+    .conteudo__texto2{
+        display: block;
+        align-self: center;
+        width: 22em;
+        margin-bottom: 2em;
+    }
+
+    .conteudo__link {
+        width: 21em;
+    }
+
+}
