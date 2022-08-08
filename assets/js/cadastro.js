@@ -45,3 +45,20 @@ function criaElemento(nome, email, senha, confirmeSenha) {
     window.location.href = './login.html'
 }
 
+function mostrar() {
+    var mostraSenha =  document.getElementById("senha")
+        if (mostraSenha.type === "password") {
+            mostraSenha.type = "text";
+        } else {
+            mostraSenha.type = "password";
+        }
+}
+
+function mostrarConfirme() {
+    var mostraSenha =  document.getElementById("confirmeSenha")
+        if (mostraSenha.type === "password") {
+            mostraSenha.type = "text";
+        } else {
+            mostraSenha.type = "password";
+        }
+}

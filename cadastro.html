@@ -42,18 +42,18 @@
                         <input id="email" class="conteudo__cadastro___formulario____conteudo" type="email" placeholder="Escolha seu melhor email" required
                         />
                         <label class="conteudo__cadastro___formulario____texto" for="" id="senhaLabel" >Senha</label>
-                        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
-                        <input id="senha" class="conteudo__cadastro___formulario____conteudo" 
-                        type="text" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" 
+                        <!-- <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i> -->
+                        <input id="senha" class="conteudo__cadastro___formulario____conteudo fa-eye" aria-hidden="true"
+                        type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" 
                         title="Usar uma letra minúscula, uma letra maiúscula, um numero ou simbolo, 4 a 8 caracteres e sem espaços."
-                        placeholder="Crie uma senha" required
+                        placeholder="Crie uma senha" required onclick="mostrar()"
                         />
                         <label class="conteudo__cadastro___formulario____texto" for="">Confirme sua senha</label>
-                        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
-                        <input id="confirmeSenha" class="conteudo__cadastro___formulario____conteudo"
-                         type="text" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" 
+                        <!-- <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i> -->
+                        <input id="confirmeSenha" class="conteudo__cadastro___formulario____conteudo fa-eye"
+                         type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" 
                          title="Usar uma letra minúscula, uma letra maiúscula, um numero ou simbolo, 4 a 8 caracteres e sem espaços."
-                         placeholder="Repita a senha criada acima" required
+                         placeholder="Repita a senha criada acima" required onclick="mostrarConfirme()"
                         />
                         <button class="conteudo__cadastro___botao" type="submit" id="cadastrar">Cadastrar</button> 
             </form>

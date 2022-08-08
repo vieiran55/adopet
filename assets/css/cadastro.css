@@ -8,13 +8,13 @@
     --cinza-medio: #BCBCBC;
     --cinza-claro: #F6F6F6;
  }
- 
+
  *{
      padding: 0;
      margin: 0;
      box-sizing: border-box;
  }
- 
+
  body {
     background-image:  url('../img/Patas.png'), url('../img/Forma2.svg'), url('../img/Forma4.png');
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
    display: flex;
    flex-direction: column;
 }
- 
+
 .conteudo {
     text-align: center;
     width: 70%;
@@ -73,10 +73,9 @@
     height: 40px;
     margin-top: 10px;
     margin: 10px;
-    background: #F7F7F7;
+    background: #f7f7f7;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -87,6 +86,14 @@
 
     color:black;
 }
+
+.fa-eye {
+    background-image: url(../img/hidden.png);
+    background-position: right;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+  }
 
 .conteudo__cadastro___formulario____conteudo::placeholder {
     color: var(--cinza-medio);
@@ -120,19 +127,13 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 0px;
-    text-align: center;  
+    text-align: center;
     color: #FFFFFF;
 
-    
+
 }
 
-.fa-eye{
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    cursor: pointer;
-    color: #0d009c;
-  }
+
 
 @media screen and (min-width: 768px) {
     body {
@@ -142,19 +143,19 @@
         min-height: 100vh;
         font-size: 16px;
     }
-   
+
     .cabecalho__imagemLogo {
         padding-right: 2em;
         width: 100%;
      }
-    
+
     .conteudo {
         margin: 8em auto;
         width: auto;
         margin-bottom: 100%;
         flex-grow: 1;
     }
-    
+
     .logo {
         align-items: center;
         width: 252px;

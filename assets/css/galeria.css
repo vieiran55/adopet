@@ -58,11 +58,17 @@
 }
 
 .container_card{
-    background: #F7F7F7;
+    background: #f7f7f7;
     width: 360px;
     height: 196px;
     margin-top: 1rem;
 }
+
+.container_card:hover{
+    cursor: pointer;
+    background: #9aff56;
+}
+
 
 .conteudo__card___imagem{
     float: left;

@@ -31,29 +31,29 @@
 
      <main class="conteudo">
         <div class="conteudo__perfil___container">
-                <form class="conteudo__mensagem___formulario" action="#">
+                <form class="conteudo__mensagem___formulario" id="perfil">
 
                     <a class="conteudo__mensagem___formulario____titulo">Perfil<a>
                     <label class="conteudo__mensagem___formulario____texto  ma" for="">Foto</label>
                         <div class="conteudo_incone___perfilConteiner">
-                        <img class="conteudo__icone___perfil" src="./assets/img/Ellipse2.png" alt="" srcset="">
-                        <a class="conteudo__icone___perfilTexto" href="">Clique na foto para editar</a>
+                        <img class="conteudo__icone___perfil" id="fotoPerfil" src="./assets/img/Ellipse2.png" alt="" srcset="">
+                        <a class="conteudo__icone___perfilTexto" onclick="alterarFoto()">Clique na foto para editar</a>
                         </div>
 
                     <label class="conteudo__mensagem___formulario____texto1 ma" for="">Nome</label>
-                    <input class="conteudo__mensagem___formulario____conteudo ma" type="text" placeholder="Null"
+                    <input class="conteudo__mensagem___formulario____conteudo ma" type="text" placeholder="Nome"
                     />
 
                     <label class="conteudo__mensagem___formulario____texto1 ma" for="">Telefone</label>
-                    <input class="conteudo__mensagem___formulario____conteudo ma" type="tel" placeholder="Null"
+                    <input class="conteudo__mensagem___formulario____conteudo ma" type="tel" placeholder="Telefone"
                     />
 
                     <label class="conteudo__mensagem___formulario____texto1 ma" for="">Cidade</label>
-                    <input class="conteudo__mensagem___formulario____conteudo ma" type="text" placeholder="Null"
+                    <input class="conteudo__mensagem___formulario____conteudo ma" type="text" placeholder="Cidade"
                     />
 
                     <label class="conteudo__mensagem___formulario____texto1 ma" for="">Sobre</label>
-                    <textarea name="mensagem" class="conteudo__mensagem___formulario____conteudoTexto ma" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+                    <textarea name="mensagem" class="conteudo__mensagem___formulario____conteudoTexto ma" cols="30" rows="10" placeholder="Conte mais sobre você"></textarea>
 
 
                     <button class="conteudo__mensagem___botao" href="#">Salvar</button> 
@@ -65,5 +65,7 @@
     <footer class="rodape">
         2022 - Desenvolvido por Alura.
     </footer>
+
+    <script src="./assets/js/perfil.js"></script>
 </body>
 </html>

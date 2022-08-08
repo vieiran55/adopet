@@ -37,3 +37,13 @@ function logar(){
         email.focus()
     }
 }
+
+function mostrar() {
+    var mostraSenha =  document.getElementById("senha")
+        if (mostraSenha.type === "password") {
+            mostraSenha.type = "text";
+        } else {
+            mostraSenha.type = "password";
+        }
+    console.log("Funfou")
+}

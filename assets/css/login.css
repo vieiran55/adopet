@@ -93,6 +93,13 @@
     color:black;
 }
 
+.fa-eye{
+    background-image: url(../img/hidden.png);
+    background-position: right;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
+
 .conteudo__cadastro___formulario____conteudo::placeholder {
     color: var(--cinza-medio);
 }
